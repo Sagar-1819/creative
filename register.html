@@ -1,0 +1,85 @@
+<!Doctype.html>
+<html>
+<head>
+    <title>register page</title>
+ 
+   
+</head>
+<style>
+h1{
+  text-align:center;
+  color:red;
+}
+body{
+  background-image:url('pics.jpg');
+  height:700px;
+  background-position:center;  
+  background-size:cover;
+  background-repeat:no-repeat;
+  
+  
+}
+.container {  
+    padding: 50px;  
+   
+}  
+  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color:blue;  
+   
+}  
+ 
+.registerbtn {  
+  background-color:green;  
+  color: white;  
+  padding:16px;
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;    
+  opacity: 0.9; 
+    
+}  
+.container.registerbtn p ,a{
+ text-decoration:none;
+}
+.container b{
+ font-size:20px;
+}
+
+</style>  
+
+<body>
+    <h1>Register Form</h1><br>
+    <form action="sucess.html">
+     <div class="container"> 
+     <center>
+     <label for="Fname"><b>FirstName:</b></label>
+     <input type="text" placeholder="Enter Fname" name="Fname" required><br><br>
+
+    <label for="Lname" ><b>LastName:</b></label>
+    <input type="text" placeholder="Enter Lname" name="Lname" required><br><br>
+
+    <b>Gender:</b>
+     <input type="radio" name="Gen" value="male" required>male
+    <input type="radio" name="Gen" value="female" required>female
+    <input type="radio" name="Gen" value="other"  required>other<br><br>
+ 
+     <label for="email"><b>Email:</b></label>
+     <input type="text" placeholder="Enter Email" name="email"  id="email" required><br><br>
+     
+     <label for="psw"><b>Password:</b></label>
+    <input type="password" placeholder="Enter Password name"psw" id="psw"  required><br><br>
+ 
+     <label for="psw-repeat"><b>Repeat Password:</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required><br><br>
+    </div>
+     </center>
+      <center>
+      <button type="submit" class="registerbtn" value="submit">Register</button><br> 
+	<p> Already Have An Account: <a href="page.html">Log In!!!</a></p>
+     </center>
+      </form> 
+   
+   
+</body>
+</html>
